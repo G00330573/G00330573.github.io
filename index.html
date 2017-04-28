@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+	<title>General Knowledge Quiz</title>
+	<meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="css/quiz.css" rel="stylesheet" type="text/css">
+	
+	<!-- This shows how many minutes and second left for the user to complete the quiz-->
+	<div style="font-weight: bold" id="timer"></div>
+	
+	 <!-- Bootstrap, CSS, JS -->
+	<link href="css/quiz.css" rel="stylesheet" type="text/css">
+
+	
+	<!--Sans Serif Google Font - used for actual quiz -->
+	 <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	</head>
+
+	<body class="image">
+	<div class="container-fluid">
+	<h1 class="headingone">Can you get 20/20 of this Irish General Knowledge Quiz?</h1><br/><br/>
+    <div class="form" >
+    <p class="para" style="margin-top:5px;"> Please fill in the following information below:</p>
+	 <form id="myForm" method="post" onsubmit="return validate(this)">
+		<input type="text" placeholder="First Name" id="firstname" class="forminputs">
+          <input type="text" placeholder="Last Name" id="lastname" class="forminputs"><br/>
+          <input type="text" placeholder="Mobile No." id="mobilenumber" class="forminputs"><br/>
+          <input type="email" placeholder="Email" id="email" class="forminputs"><br/><br/>
+	      <input type="submit" class="button" formaction="mailto:someone@example.com" formmethod="POST" style="width:30%; position:center;" value="Submit">
+   </form>
+   </div>
+    <div style="width:100%; margin-left:auto; margin-right:auto;">
+    <input type="button" id="quizButton" class="btn2" style="width:90%;float:left; margin-top:40px" value="Let's Start!!" onclick="validate_activity();">
+    <!--JS validation for the form above-->
+    <script src="js/validation.js"></script>
+      </div>
+  </div>
+
+
+</body>
+</html>
